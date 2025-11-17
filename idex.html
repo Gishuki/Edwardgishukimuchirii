@@ -1,0 +1,249 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edward Gishuki | Web Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+
+    .tagline {
+      font-size: 1.2em;
+    }
+
+    /* About Me Section */
+    .about {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .about h2 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .about ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about ul li {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #ff6a00;
+    }
+
+    /* Contact Section */
+    #contact-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact-btn {
+      padding: 10px 20px;
+      background-color: white;
+      color: #ff6a00;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: #ff6a00;
+      color: white;
+    }
+
+    .contact-info {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      margin-top: 20px;
+    }
+
+    .contact-info.show {
+      display: block;
+      opacity: 1;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .project {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .project h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #ffd6c2;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <!-- Corrected image URL -->
+    <img src="EDWARD.jpg" alt="profile picture">
+    <p class="tagline">Crafting beautiful and functional websites</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+
+    <p>Hello, I'm Edward Gishuki, a passionate and motivated web developer committed to turning creative ideas into functional and interactive web experiences. My career in web development began with a curiosity for technology, and it has grown into a fulfilling profession that I’m deeply enthusiastic about.</p>
+
+    <h3>Core Skills & Expertise</h3>
+    <ul>
+      <li>HTML, CSS & JavaScript: Proficient in building responsive and interactive web pages</li>
+      <li>Responsive Design: Crafting seamless user experiences across all devices</li>
+      <li>Version Control: Comfortable using Git and GitHub for collaboration and project management</li>
+      <li>Cross-Browser Compatibility: Ensuring consistency in appearance across browsers</li>
+      <li>UX/UI Design: Focusing on user-centered design to enhance usability and visual appeal</li>
+    </ul>
+
+    <h3>Approach to Web Development</h3>
+    <p>I’m dedicated to building websites that are both visually appealing and highly functional. I believe in clean, semantic code that’s easy to maintain, with a focus on performance and optimization. Every project is an opportunity to challenge myself and deliver solutions that exceed client expectations.</p>
+
+    <h3>Collaboration & Communication</h3>
+    <p>I believe that collaboration is key to success. I’m always eager to listen to client needs, share ideas, and work together to create impactful solutions. I enjoy bringing teams together and ensuring smooth communication throughout every phase of a project.</p>
+
+    <h3>Looking Forward</h3>
+    <p>As a developer, I’m constantly learning and adapting to new technologies and trends in web development. I’m excited about the future of web technologies and always look forward to expanding my knowledge and skills.</p>
+
+    <p>If you're looking for a reliable and passionate web developer, let's connect! I’m excited to help turn your vision into reality.</p>
+  </section>
+
+  <section id="contact-section" class="contact-section">
+    <h2>Let's Connect!</h2>
+    <p>Have a project in mind or just want to say hi? I'm one click away.</p>
+    <button class="contact-btn" onclick="contactMe()">Contact Me</button>
+
+    <div class="contact-info" id="contact-info">
+      <p>Email: <a href="mailto:edwardgishuki254@gmail.com">edwardgishuki254@gmail.com</a></p>
+      <p>Phone: <a href="tel:+254748185856">+254 748 185 856</a></p>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>My Work</h2>
+
+    <div class="project">
+      <h3>Fashion Landing Page</h3>
+      <p>I designed and developed a stylish landing page for a fashion brand using HTML, CSS, and JavaScript. The design is fully responsive with smooth animations and a modern, elegant layout.</p>
+    </div>
+
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>A clean, responsive portfolio to showcase my skills, projects, and contact info. Built using HTML, CSS, and vanilla JavaScript, with an emphasis on UX/UI best practices and accessibility.</p>
+    </div>
+
+    <div class="project">
+      <h3>E-commerce Product Page</h3>
+      <p>An interactive product details page featuring dynamic image sliders, customer review sections, and a responsive checkout experience — optimized for performance across devices.</p>
+    </div>
+  </section>
+
+  <script>
+    function contactMe() {
+      var contactInfo = document.getElementById("contact-info");
+      contactInfo.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
+
+
+
